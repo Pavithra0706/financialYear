@@ -1,0 +1,41 @@
+{
+  "name": "financialyear",
+  "version": "1.0.1",
+  "description": "A simple JavaScript library for handling financial and assessment years for given dates and ranges.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npm run clean && mkdir -p dist && cp index.js dist/index.js",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "preversion": "npm run test",
+    "version": "echo \"Releasing version $npm_package_version\"",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/financialYear.git"
+  },
+  "keywords": [
+    "financial-year",
+    "assessment-year",
+    "dates",
+    "date-range",
+    "fiscal-year",
+    "javascript-library",
+    "npm-library"
+  ],
+  "author": "ssaisanthosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/financialYyear-lib/issues"
+  },
+  "homepage": "https://github.com/yourusername/financialYyear-lib#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
